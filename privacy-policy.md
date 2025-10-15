@@ -1,29 +1,186 @@
-# Inscope App Privacy Policy
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b5fff" />
+  <title>Inscope: PrepWise — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Inscope: PrepWise — an educational quiz app. Explains what data we collect, how it's used, and how to opt-out." />
+  <style>
+    :root{
+      --accent:#0b5fff;
+      --muted:#6b7280;
+      --maxwidth:900px;
+      --radius:12px;
+      --card-bg:#ffffff;
+      --page-bg:#f5f7fb;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--page-bg);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.55;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      font-size:16px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxwidth);
+    }
+    .card{
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      box-shadow:0 6px 24px rgba(15,23,42,0.06);
+      padding:28px;
+    }
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px;}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;
+    }
+    h1{margin:0;font-size:22px}
+    .meta{color:var(--muted);margin-top:6px;font-size:14px}
+    section{margin-top:20px}
+    h2{font-size:18px;margin:0 0 10px 0}
+    p{margin:0 0 12px 0;color:#0f172a}
+    ul{margin:0 0 12px 20px}
+    .muted{color:var(--muted)}
+    .notice{
+      background:#eef2ff;border-radius:10px;padding:12px;margin-top:8px;color:#0b4ef8;border:1px solid rgba(11,78,248,0.06)
+    }
+    .foot{
+      margin-top:22px;font-size:14px;color:var(--muted);
+      display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+    }
+    a{color:var(--accent);text-decoration:none}
+    .btn{
+      display:inline-block;padding:8px 12px;border-radius:8px;border:1px solid rgba(11,78,248,0.12);background:#fff;color:var(--accent);font-weight:600;text-decoration:none;
+    }
+    .small{font-size:14px}
+    @media (max-width:520px){
+      body{padding:18px}
+      .card{padding:18px}
+      h1{font-size:18px}
+    }
+    /* print styles */
+    @media print{
+      body{background:white;color:black}
+      .card{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <article class="card" aria-labelledby="policyTitle">
+      <header>
+        <div class="logo" aria-hidden="true">PW</div>
+        <div>
+          <h1 id="policyTitle">Inscope: PrepWise — Privacy Policy</h1>
+          <div class="meta">Effective date: <strong>October 15, 2025</strong></div>
+        </div>
+      </header>
 
-**Effective Date:** October 15, 2025
+      <section>
+        <p class="muted">Last updated: October 15, 2025</p>
 
-Inscope (“we”, “our”, or “us”) respects your privacy. This Privacy Policy describes how we collect, use, and protect your information when you use the Inscope Android application.
+        <div class="notice">
+          <strong>Summary:</strong> PrepWise is an educational quiz app developed by Inscope. We only collect the user’s <strong>email/username</strong> plus ephemeral analytics used to improve the app. Analytics data is collected only during runtime and deleted after the session. Users can opt out of analytics collection at any time.
+        </div>
+      </section>
 
-## 1. Information We Collect
-- **User Data:** Email, name, and progress data are stored securely.
-- **Usage Data:** We collect non-identifiable analytics to improve performance.
-- **Storage Access:** Used only to save app data locally.
+      <section aria-labelledby="what-we-collect">
+        <h2 id="what-we-collect">1. Information we collect</h2>
+        <p>PrepWise collects the minimum information required to provide and improve the app:</p>
+        <ul>
+          <li><strong>Email / Username:</strong> Collected when a user creates an account or signs in. Used only for identification, optional personalization, and account recovery.</li>
+          <li><strong>Runtime analytics (ephemeral):</strong> Non-identifiable metrics collected during app sessions — examples include question performance (correct/incorrect), time spent per question, app errors/crashes, device model and OS version, and session timestamps. These analytics are used solely for product improvement and educational insights and are deleted after the session ends.</li>
+        </ul>
+        <p class="muted small">We do <em>not</em> request or store payment data, contacts, location, camera or microphone data. The only user-identifying field is email/username.</p>
+      </section>
 
-## 2. How We Use Your Data
-We use collected information solely to provide, improve, and personalize your app experience.
+      <section aria-labelledby="how-we-use">
+        <h2 id="how-we-use">2. How we use information</h2>
+        <ul>
+          <li><strong>App functionality:</strong> Email/username allow account access and progress tracking within a session.</li>
+          <li><strong>Product improvement:</strong> Ephemeral analytics help us tune question difficulty, fix bugs, and improve learning outcomes.</li>
+          <li><strong>Support:</strong> If you contact support, we may use your email to address your request.</li>
+        </ul>
+      </section>
 
-## 3. Data Sharing
-We do **not** sell or share your personal information with third parties.
+      <section aria-labelledby="data-retention">
+        <h2 id="data-retention">3. Data retention & ephemeral policy</h2>
+        <p>All analytics data collected for product improvement is <strong>ephemeral:</strong> it is collected only while the app runs and removed (deleted) when the session ends. PrepWise does not retain session analytics permanently.</p>
+        <p>Stored account identifiers (email/username) are kept only as long as needed to provide account functionality. If you request account deletion (see <strong>Contact & Deletion</strong>), your account identifier will be removed.</p>
+      </section>
 
-## 4. Data Security
-All information is stored securely using Firebase and other encrypted storage mechanisms.
+      <section aria-labelledby="third-parties">
+        <h2 id="third-parties">4. Third-party services</h2>
+        <p>We use the following trusted service providers to operate the app:</p>
+        <ul>
+          <li><strong>Firebase (Google):</strong> used for secure transport, optional authentication services, and transient analytics buffering. When Firebase services are used, they act as processors on our behalf. We only share the minimum necessary runtime analytics with Firebase for processing, and those analytics are deleted according to our ephemeral policy.</li>
+        </ul>
+        <p class="muted small">We do not sell or trade personal information to advertisers or third parties.</p>
+      </section>
 
-## 5. Your Rights
-You may request deletion of your data by contacting us at: **support@inscopeapp.com**
+      <section aria-labelledby="optout">
+        <h2 id="optout">5. Opting out of analytics</h2>
+        <p>You can opt out of analytics collection at any time:</p>
+        <ul>
+          <li><strong>In-app:</strong> Open PrepWise → Settings → Privacy → toggle <em>Analytics</em> OFF. The app will stop collecting runtime analytics when that toggle is off.</li>
+          <li><strong>Account deletion / data requests:</strong> Email <a href="mailto:support@inscopeapp.com">support@inscopeapp.com</a> with the subject <em>Data Deletion</em> and we will process your request within 30 days.</li>
+        </ul>
+        <p class="muted small">If you opt out mid-session, any ephemeral analytics already collected during that session will be deleted immediately and no further analytics will be captured.</p>
+      </section>
 
-## 6. Changes to this Policy
-We may update this policy periodically. Any changes will be reflected on this page.
+      <section aria-labelledby="security">
+        <h2 id="security">6. Security</h2>
+        <p>We take reasonable steps to protect data in transit and in processing. Communications between the app and our services use encrypted channels (HTTPS / TLS). Our systems and vendor services (e.g., Firebase) employ industry standard safeguards.</p>
+        <p class="muted small">No system is completely secure; if a security incident affects personal information, we will notify affected users and authorities as required by law.</p>
+      </section>
 
-## 7. Contact Us
-If you have questions, contact us at:
-📧 support@inscopeapp.com
+      <section aria-labelledby="children">
+        <h2 id="children">7. Children</h2>
+        <p>PrepWise is an educational app designed for students. We do not knowingly collect personal information from children under the age of 13 without parental consent. If you are a parent or guardian and believe your child under 13 provided us with information, please contact <a href="mailto:support@inscopeapp.com">support@inscopeapp.com</a> to request removal.</p>
+      </section>
+
+      <section aria-labelledby="user-rights">
+        <h2 id="user-rights">8. Your rights</h2>
+        <p>You may:</p>
+        <ul>
+          <li>Request access to or deletion of your account identifier (email/username).</li>
+          <li>Opt out of analytics collection at any time (see <em>Opting out</em>).</li>
+          <li>Contact us with questions, corrections or privacy concerns.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">9. Changes to this Privacy Policy</h2>
+        <p>We may update this policy occasionally. Material changes will be posted on this page with the updated effective date. Continued use of the app after updates indicates acceptance of the updated policy.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">10. Contact & deletion requests</h2>
+        <p>For privacy questions, opt-out requests, or account deletion:</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto: afterdawn.service@gmail.com</a>
+        </p>
+        <p class="muted small">Please include your account email/username and a brief description of the request.</p>
+      </section>
+
+      <footer class="foot" role="contentinfo">
+        <div class="small muted">Inscope — Developer of PrepWise</div>
+        <div>
+          <a class="btn" href="mailto:support@inscopeapp.com" aria-label="Contact support">Contact support</a>
+        </div>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
