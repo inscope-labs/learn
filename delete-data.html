@@ -1,32 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Your [App Name] Account</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
-        .form-container { padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
-        label { display: block; margin: 10px 0 5px; }
-        input, textarea { width: 100%; padding: 8px; margin-bottom: 10px; }
-        button { padding: 10px 20px; background: #d32f2f; color: white; border: none; cursor: pointer; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Data Deletion Request — Inscope: PrepWise educational quiz app. Submit a request to permanently delete your account and associated data." />
+  <title>Data Deletion Request – Inscope: PrepWise</title>
+
+  <style>
+    :root{
+      --accent:#0b5fff;
+      --muted:#6b7280;
+      --maxwidth:900px;
+      --radius:12px;
+      --card-bg:#ffffff;
+      --page-bg:#f5f7fb;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--page-bg);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.55;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      font-size:16px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxwidth);
+    }
+    .card{
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      box-shadow:0 6px 24px rgba(15,23,42,0.06);
+      padding:28px;
+    }
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px;}
+    .logo{
+      width:56px;height:56px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#2dd4bf);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-weight:700;font-size:18px;
+    }
+    h1{margin:0;font-size:22px}
+    .meta{color:var(--muted);margin-top:6px;font-size:14px}
+    section{margin-top:20px}
+    h2{font-size:18px;margin:0 0 10px 0}
+    p{margin:0 0 12px 0;color:#0f172a}
+    .muted{color:var(--muted)}
+    .notice{
+      background:#eef2ff;border-radius:10px;padding:12px;margin-top:8px;
+      color:#0b4ef8;border:1px solid rgba(11,78,248,0.06)
+    }
+    a{color:var(--accent);text-decoration:none}
+    input, textarea{
+      width:100%;padding:10px;border:1px solid #d1d5db;
+      border-radius:8px;font-size:15px;margin-top:4px;margin-bottom:14px;
+    }
+    label{font-weight:600;color:#0f172a;}
+    button{
+      background:var(--accent);color:white;border:none;
+      padding:12px 20px;border-radius:8px;font-weight:600;
+      cursor:pointer;transition:background .2s;
+    }
+    button:hover{background:#0040d6;}
+    .foot{
+      margin-top:22px;font-size:14px;color:var(--muted);
+      display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+    }
+    @media (max-width:520px){
+      body{padding:18px}
+      .card{padding:18px}
+      h1{font-size:18px}
+    }
+    @media print{
+      body{background:white;color:black}
+      .card{box-shadow:none}
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Request Account Deletion for [Your App Name]</h1>
-    <p>Submit this form to permanently delete your account and associated data. We’ll process your request within 30 days. See our <a href="your-privacy-policy-url">Privacy Policy</a> for details.</p>
-    <div class="form-container">
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">IN</div>
+        <div>
+          <h1>Data Deletion Request</h1>
+          <div class="meta">For Inscope: PrepWise</div>
+        </div>
+      </header>
+
+      <section>
+        <p>
+          You can use this form to permanently delete your <strong>Inscope: PrepWise</strong> account and all associated personal data.  
+          Once your request is submitted, it will be reviewed and processed within <strong>30 days</strong>.  
+          For full details, see our <a href="https://inscope.github.io/privacy-policy" target="_blank">Privacy Policy</a>.
+        </p>
+
+        <div class="notice small">
+          ⚠️ Please ensure the email or username provided matches your app account information.
+        </div>
+      </section>
+
+      <section>
         <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Full Name (Optional):</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email or Username (Required):</label>
-            <input type="email" id="email" name="email" required>
-            <label for="account-id">Account ID (if applicable):</label>
-            <input type="text" id="account-id" name="account-id">
-            <label for="message">Additional Details:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-            <button type="submit">Submit Deletion Request</button>
+          <label for="name">Full Name (optional)</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+          <label for="email">Email or Username <span class="muted">(required)</span></label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email or username">
+
+          <label for="account-id">Account ID (if applicable)</label>
+          <input type="text" id="account-id" name="account-id" placeholder="Enter your account ID">
+
+          <label for="message">Additional Details</label>
+          <textarea id="message" name="message" rows="4" placeholder="Provide any additional context"></textarea>
+
+          <button type="submit">Submit Deletion Request</button>
         </form>
+      </section>
+
+      <div class="foot">
+        <span>Need help? Email us at <a href="mailto:privacy@inscope.app">privacy@inscope.app</a></span>
+        <a href="https://inscope.github.io/privacy-policy" class="btn small">View Privacy Policy</a>
+      </div>
     </div>
+  </div>
 </body>
-      </html>
+</html>
